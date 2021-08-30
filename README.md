@@ -18,3 +18,29 @@
   - 生成面包屑的动态url
     - 匹配path里包含`:key`的动态值，替换成`params`或者`query`里对应的`key`值。
 - 完成：一处代码供全局。
+
+## 浏览器同源策略和跨域方法
+
+### 同源策略
+
+- 同源： 协议 + 端口 + 端口三者均相同
+- 同源策略限制的行为
+  - ajax请求
+  - cookie、LocalStorage、IndexDB 无法获取
+  - DOM 和 JS 对象无法获得
+- 跨域方法
+  - JSONP
+    - script标签src属性传url，url的callback函数
+  - CORS跨域
+    - 跨域资源共享，通过客户端发送请求时请求头加origin，服务器返回的响应头加Access-control-allow-origin,浏览器以此判断是否允许跨域。
+    - 是否要预检请求
+      - http请求方式：get post put delete header options trace connection 
+      - 其中get post header请求，且请求头不超过 Accept Accept-language Content-Language Last-Event-ID Content-Type 的为简单请求。
+      - 简单请求情况下，浏览器直接发送CORS请求，请求加orgin字段，响应包含Access-Control-Allow-Origin，浏览器以此判断是否允许。
+      - 非简单请求，在正式通信前，先发一次预检请求，预检请求通过后，在进行CORS请求。
+  - nginx反向代理
+    - 反向代理：代理的是服务器，客户端不知道最终请求转发到哪个服务器上，服务器知道来自哪个客户端。
+    - 正向代理：代理的是客户端，客户端知道请求哪个服务器，但服务器指知道从来自哪个代理。
+  - html5
+    - window.postMessage() 方法
+  - document.domain + iframe
