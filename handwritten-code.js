@@ -161,3 +161,54 @@ function throttle (e, func, delay) {
     }
 }
 
+/* reduce */
+// arr.reduce((acc, currentValue, index, array, initialValue ) => {})
+Array.prototype.myReduce = function(fn, initialValue) {
+    let arr = Array.prototype.slice.call(this)
+    if(!arr.length) {
+        return
+    }
+    let res;
+    if (initialValue) {
+        res = initialValue
+    } else {
+        res = arr[0]
+    }
+    for(let i =0;i<arr.length;i++) {
+        res = fn.call(null, res, arr[i], i, this)
+    }
+    return res
+}
+
+/* Promise.all */
+//规则：传入promise数组，只有全部resolve时返回一个resolve状态的新promise;如果有一个reject,返回这个rejected状态的promise；pending一样
+myPromiseAll = function (promiseArr) {
+    return new promiseArr((resolve, reject) => {
+        let result = []
+        for(let i=0;i<promiseArr.length;i++) {
+            promiseArr[i].then(data => {
+                result.push(data)
+                if(result.length === promiseArr.length) {
+                    resolve(result)
+                }
+            }).catch((err) => {
+                reject(err)
+            })
+        }
+    })
+}
+
+let asyncPromise = async function (promises, resolve, reject) {
+    for(let i=0;i<promiseArr.length;i++) {
+        let x = await promiseArr[i].then(data => {
+            result.push(data)
+        }).catch((err) => {
+            reject(err)
+        })
+        if(result.length === promiseArr.length) {
+            resolve(result)
+        }
+    }
+
+
+}
