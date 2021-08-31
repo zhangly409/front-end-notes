@@ -21,3 +21,143 @@ Function.prototype.myBind = function (asThis) {
 const B  = JSON.parse(JSON.stringify(A)) // JSON value不支持的数据类型，都拷贝不了
 // 1. 递归； 2. 对象分类型讨论； 3. 解决循环引用（环）
 
+function deepClone(target) {
+    if (typeof target === 'object') {
+        let cloneTarget = Array.isArray(target) ? [] : {}
+        for(let key in target) {
+            cloneTarget = deepClone(target[key])
+        }
+        return cloneTarget
+    } else {
+        return target
+    }
+}
+// 避免循环引用，即对象的属性直接或者间接得引用了对象本身的情况
+
+function deepClone(target, map= new Map()) {
+    if (typeof target === 'object') {
+        let cloneTarget = Array.isArray(target) ? [] : {}
+        if (Map.get(target)) {
+            return Map.set(target)
+        }
+        Map.set(target, cloneTarget)
+        for(let key in target) {
+            cloneTarget = deepClone(target[key], map)
+        }
+        return cloneTarget
+    } else {
+        return target
+    }
+}
+
+/* Flat Array, 多维数组变一维数组 */
+console.log([1, [1, 2], [1, [2]]].flat(3))
+
+function flat (arr) {
+    let result = []
+    for(let i=0;i<arr.length;i++) {
+        if(Array.isArray(arr[i])) {
+            result = result.concat(flat(arr[i]))
+        } else {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+/* 判断数据类型 */
+function myTypeof (obj) {
+    return Object.prototype.toString.call(obj).slice(8, -1)
+}
+
+/* 继承 */
+function Animal() {
+    this.name = name
+    this.getName = function () {
+        return this.name
+    }
+}
+
+function Dog(name) {
+    Animal.call(this, name)
+}
+Dog.prototype = new Animal()
+
+// 另一种方法
+function Animal () {
+    this.name = name
+}
+Animal.prototype.getName = function () {
+    return this.name
+}
+
+function Dog () {}
+Dog.prototype = new Animal()
+
+let dog1 = new Dog()
+Dog.name = 'dog1'
+
+/* class 实现继承 */
+class Animal {
+    constructor(name) {
+        this.name = name
+    }
+    getName() {
+        return this.name
+    }
+}
+
+class Dog extends Animal {
+    constructor(name, age) {
+        super(name)
+        this.age = age
+    }
+}
+
+/* 数组去重 */
+// ES5
+function uniqueArray(arr) {
+    let res = arr.filter((item, index, array) => {
+        return array.indexOf(item) === index
+    })
+    return res
+}
+// Es6
+function uniqueArray(arr) {
+    let res = [...new Set(arr)]
+    return res
+}
+
+/* 解析 URL 参数 */
+function parseURL(url) {
+    let paramObj = {}
+    let reg = new RegExp(/.+\?(.+)$/) //将？后面的值取出来
+    let search = url.split('?')[1]
+    let paramArray = search.split('&')
+    paramArray.map(param => {
+        let [key, val] = param.split('=')
+        val = decodeURIComponent(val)
+        paramObj[key] = val
+    })
+    return paramObj
+}
+
+/* 函数防抖 和 函数节流*/
+// 防抖：一段时间内只执行一次，如果期间又触发则重新计时
+// 节流：一段时间内只执行一次，如果期间又触发忽略不执行。
+
+function debounce (e, func, delay) {
+    clearTimeout(e.id)
+    e.id = setTimeout(() => {
+        func()
+    }, delay)
+}
+
+function throttle (e, func, delay) {
+    if (!e.id) {
+        e.id = setTimeout(() => {
+            func()
+        }, delay)
+    }
+}
+
