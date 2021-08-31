@@ -18,6 +18,10 @@
 
 [原型、原型链、原型继承](https://github.com/zhangly409/front-end-notes/issues/6)
 
+[常用数组方法](https://github.com/zhangly409/front-end-notes/issues/8)
+
+[JS 数据类型以及垃圾回收机制和内存泄漏](https://github.com/zhangly409/front-end-notes/issues/9)
+
 ## 工具相关
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
