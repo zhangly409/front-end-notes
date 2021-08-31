@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="middle"><h4>中间弹性区11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h4></div>
+        <div class="left"><h4>左边栏</h4></div>
+        <div class="right"><h4>右边栏</h4></div>
+    </div>
+</body>
+<style>
+    .container {
+        height: 200px;
+        overflow: hidden;
+        padding: 0 200px;
+    }
+    .middle {
+        float: left;
+        width: 100%;
+        background-color: bisque;
+        height: 200px;
+    }
+    .left {
+        float: left;
+        width: 200px;
+        margin-left: -100%;
+        background-color: blue;
+        position: relative;
+        left: -200px;
+        height: 200px;
+    }
+    .right {
+        float: left;
+        width: 200px;
+        margin-left: -200px;
+        background-color: brown;
+        position: relative;
+        right: -200px;
+        height: 200px;
+    }
+</style>
+
+</html>
