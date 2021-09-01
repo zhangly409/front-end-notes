@@ -6,6 +6,8 @@
 
 [keep-alive 理解](https://github.com/zhangly409/front-end-notes/issues/11)
 
+[Vue 项目上线后服务器资源更新而浏览器有缓存不更新](https://github.com/zhangly409/front-end-notes/issues/14)
+
 ## Http 网络相关
 
 [浏览器同源策略和跨域方法](https://github.com/zhangly409/front-end-notes/issues/2)
