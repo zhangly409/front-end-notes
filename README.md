@@ -24,6 +24,10 @@
 
 [JS 数据类型以及垃圾回收机制和内存泄漏](https://github.com/zhangly409/front-end-notes/issues/9)
 
+[前端性能优化](https://github.com/zhangly409/front-end-notes/issues/12)
+
+[Event Loop](https://github.com/zhangly409/front-end-notes/issues/13)
+
 ## 工具相关
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
