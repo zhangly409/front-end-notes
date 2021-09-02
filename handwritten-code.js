@@ -209,6 +209,7 @@ let asyncPromise = async function (promises, resolve, reject) {
             resolve(result)
         }
     }
-
-
 }
+
+/* Promise */
+
