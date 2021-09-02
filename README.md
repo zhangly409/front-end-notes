@@ -30,6 +30,8 @@
 
 [Event Loop](https://github.com/zhangly409/front-end-notes/issues/13)
 
+[队列相关算法题（字符串翻转，最大不重复子串）](https://github.com/zhangly409/front-end-notes/issues/15)
+
 ## 工具相关
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
