@@ -36,6 +36,8 @@
 
 [JS 模块化详解](https://github.com/zhangly409/front-end-notes/issues/16)
 
+[重排和重绘](https://github.com/zhangly409/front-end-notes/issues/18)
+
 ## 工具相关
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
