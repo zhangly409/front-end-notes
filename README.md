@@ -16,6 +16,8 @@
 
 [浏览器缓存机制](https://github.com/zhangly409/front-end-notes/issues/4)
 
+[浅说 XSS 和 CSRF](https://github.com/zhangly409/front-end-notes/issues/17)
+
 ## JS 相关
 
 [JS 的 Event Loop 事件循环机制](https://github.com/zhangly409/front-end-notes/issues/5)

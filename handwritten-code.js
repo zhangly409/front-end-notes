@@ -212,4 +212,42 @@ let asyncPromise = async function (promises, resolve, reject) {
 }
 
 /* Promise */
+// 一个简单的任务队列, 要求分别在 1,3,4 秒后打印出 "1", "2", "3"
+
+function Queue() {
+    let _tasks = []
+    this.task = function (delay, func) {
+        _tasks.push({delay, func})   
+    }
+    this.start = function() {
+        if(this._task.length > 0) {
+            let {delay, func} = this._tasks[0]
+            setTimeout(() => {
+                func.apply(this)
+                this._tasks.shift()
+                if(this._task.length) {
+                    this.start()
+                }
+            }, delay)
+        }
+    }   
+}
+
+function Queue() {
+    let _tasks = []
+    this.task = function (delay, func) {
+        _tasks.push({delay, func})   
+    }
+    this.start = async function() {
+       for(let item in _tasks) {
+        let {delay, func} = item
+        await new Promise((resolve, reject)=> {
+            setTimeout(() => {
+                func.apply(this)
+                resolve()
+            }, delay)
+        })
+       }   
+    }   
+}
 
