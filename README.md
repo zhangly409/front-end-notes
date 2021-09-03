@@ -51,3 +51,7 @@
 [队列相关算法题（字符串翻转，最大不重复子串）](https://github.com/zhangly409/front-end-notes/issues/15)
 
 [递归算法详解](https://github.com/zhangly409/front-end-notes/issues/20)
+
+[线性规划浅析](https://github.com/zhangly409/front-end-notes/issues/21)
+
+[动态规划问题](https://github.com/zhangly409/front-end-notes/issues/22)
