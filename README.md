@@ -32,8 +32,6 @@
 
 [Event Loop](https://github.com/zhangly409/front-end-notes/issues/13)
 
-[队列相关算法题（字符串翻转，最大不重复子串）](https://github.com/zhangly409/front-end-notes/issues/15)
-
 [JS 模块化详解](https://github.com/zhangly409/front-end-notes/issues/16)
 
 [重排和重绘](https://github.com/zhangly409/front-end-notes/issues/18)
@@ -47,3 +45,9 @@
 [树与二叉树](https://github.com/zhangly409/front-end-notes/issues/10)
 
 [深度优先遍历 DFS 和广度优先遍历 BFS](https://github.com/zhangly409/front-end-notes/issues/19)
+
+## 算法相关
+
+[队列相关算法题（字符串翻转，最大不重复子串）](https://github.com/zhangly409/front-end-notes/issues/15)
+
+[递归算法详解](https://github.com/zhangly409/front-end-notes/issues/20)
