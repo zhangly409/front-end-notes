@@ -18,6 +18,8 @@
 
 [浅说 XSS 和 CSRF](https://github.com/zhangly409/front-end-notes/issues/17)
 
+[Http 2.0新增特性](https://github.com/zhangly409/front-end-notes/issues/23)
+
 ## JS 相关
 
 [JS 的 Event Loop 事件循环机制](https://github.com/zhangly409/front-end-notes/issues/5)
