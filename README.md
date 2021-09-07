@@ -42,6 +42,8 @@
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
 
+[Webpack 打包优化](https://github.com/zhangly409/front-end-notes/issues/24)
+
 ## 数据结构相关
 
 [树与二叉树](https://github.com/zhangly409/front-end-notes/issues/10)
