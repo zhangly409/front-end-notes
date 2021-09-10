@@ -20,7 +20,7 @@
 
 [浅说 XSS 和 CSRF](https://github.com/zhangly409/front-end-notes/issues/17)
 
-[Http 2.0新增特性](https://github.com/zhangly409/front-end-notes/issues/23)
+[Http1.0 HTTP 1.1 HTTP 2.0 发展史](https://github.com/zhangly409/front-end-notes/issues/23)
 
 ## JS 相关
 
