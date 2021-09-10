@@ -40,6 +40,8 @@
 
 [重排和重绘](https://github.com/zhangly409/front-end-notes/issues/18)
 
+[ES5 和 ES6 实现继承](https://github.com/zhangly409/front-end-notes/issues/28)
+
 ## 工具相关
 
 [Webpack 工作原理](https://github.com/zhangly409/front-end-notes/issues/7)
