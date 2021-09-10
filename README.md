@@ -1,5 +1,11 @@
 # 学习 & 总结
 
+## 项目相关
+
+[DevOps 浅谈](https://github.com/zhangly409/front-end-notes/issues/31)
+
+[微前端浅谈](https://github.com/zhangly409/front-end-notes/issues/32)
+
 ## Vue 相关
 
 [Vue 项目多层级页面的动态面包屑的实现](https://github.com/zhangly409/front-end-notes/issues/1)
