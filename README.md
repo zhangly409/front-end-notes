@@ -10,6 +10,8 @@
 
 [Vue 长列表优化](https://github.com/zhangly409/front-end-notes/issues/25)
 
+[搭建一个属于自己的脚手架并作为 NPM 包发布](https://github.com/zhangly409/front-end-notes/issues/30)
+
 ## Http 网络相关
 
 [浏览器同源策略和跨域方法](https://github.com/zhangly409/front-end-notes/issues/2)
