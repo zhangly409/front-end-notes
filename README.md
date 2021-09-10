@@ -77,3 +77,5 @@
 [线性规划浅析](https://github.com/zhangly409/front-end-notes/issues/21)
 
 [动态规划问题](https://github.com/zhangly409/front-end-notes/issues/22)
+
+[堆，完全二叉树， 树](https://github.com/zhangly409/front-end-notes/issues/27)
