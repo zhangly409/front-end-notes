@@ -20,6 +20,8 @@
 
 [搭建一个属于自己的脚手架并作为 NPM 包发布](https://github.com/zhangly409/front-end-notes/issues/30)
 
+[Vue 响应式原理](https://github.com/zhangly409/front-end-notes/issues/36)
+
 ## Http 网络相关
 
 [浏览器同源策略和跨域方法](https://github.com/zhangly409/front-end-notes/issues/2)
