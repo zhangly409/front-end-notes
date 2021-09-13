@@ -22,6 +22,8 @@
 
 [Vue 响应式原理](https://github.com/zhangly409/front-end-notes/issues/36)
 
+[Vue 模板编译原理](https://github.com/zhangly409/front-end-notes/issues/38)
+
 ## Http 网络相关
 
 [浏览器同源策略和跨域方法](https://github.com/zhangly409/front-end-notes/issues/2)
