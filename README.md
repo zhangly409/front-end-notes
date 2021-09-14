@@ -10,6 +10,8 @@
 
 [前端发展方向](https://github.com/zhangly409/front-end-notes/issues/39)
 
+[RESTful API 设计](https://github.com/zhangly409/front-end-notes/issues/40)
+
 ## Vue 相关
 
 [Vue 项目多层级页面的动态面包屑的实现](https://github.com/zhangly409/front-end-notes/issues/1)
