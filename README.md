@@ -12,7 +12,7 @@
 
 [RESTful API 设计](https://github.com/zhangly409/front-end-notes/issues/40)
 
-[字符编码方式](https://github.com/zhangly409/front-end-notes/issues/40)
+[字符编码方式](https://github.com/zhangly409/front-end-notes/issues/41)
 
 ## Vue 相关
 
@@ -29,6 +29,8 @@
 [Vue 响应式原理](https://github.com/zhangly409/front-end-notes/issues/36)
 
 [Vue 模板编译原理](https://github.com/zhangly409/front-end-notes/issues/38)
+
+[用 proxy 实现数据劫持](https://github.com/zhangly409/front-end-notes/issues/41)
 
 ## Http 网络相关
 
