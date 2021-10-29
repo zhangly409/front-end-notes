@@ -66,6 +66,8 @@
 
 [ES5 和 ES6 实现继承](https://github.com/zhangly409/front-end-notes/issues/28)
 
+[Web Compoents 入门](https://github.com/zhangly409/front-end-notes/issues/43)
+
 ## CSS 相关
 
 [Grid 布局和 Flex 布局](https://github.com/zhangly409/front-end-notes/issues/29)
